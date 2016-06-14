@@ -17,6 +17,12 @@ class My_Save:
         if not type == 'save':
             return data
 if __name__ == '__main__':
-    CC = My_Save('xiaozhang')
-    CC.command("select Flag from url where url = 'http://www.webtoons.comasd'",type='return')
+        M = My_Save('xiaozhang')
+        M.command('truncate table Content;',type='save')
+        M = My_Save('xiaozhang')
+        M.command('truncate table temp;',type='save')
+        M = My_Save('xiaozhang')
+        M.command('truncate table adddate;',type='save')
+        M = My_Save('xiaozhang')
+        M.command('truncate table url;',type='save')
 #         

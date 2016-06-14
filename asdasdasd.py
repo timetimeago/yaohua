@@ -70,6 +70,7 @@ class LoginDlg(QDialog):
         M.command('truncate table adddate;',type='save')
         M = My_Save('xiaozhang')
         M.command('truncate table url;',type='save')
+        QMessageBox.warning(self,"提示","已经将内容下载到本地",QMessageBox.Yes)
         exit(0)
 #         if self.usrLineEdit.text().strip() == "eric" and self.pwdLineEdit.text() == "eric":
 #             super(LoginDlg, self).accept()
